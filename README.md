@@ -1,6 +1,15 @@
 # automate-dataprep
 Useful Python scripts to automate data processing for TTS and STS ML projects.
 
+## Get total duration of audio in an input directory. Uses ffprobe.
+[scripts/get_duration.py](https://github.com/iuliiakr/automate-dataprep/blob/main/scripts/get_duration.py)
+Outputs total duration (hh:mm:ss) of all audio (mp3, opus, wav, flac, ogg, m4a, aac) in an input directory.
+Example of usage:
+```bash
+python scripts/get_duration.py {PATH_TO_INPUT_DIR}
+```
+
+
 ## Check duration distribution for your dataset
 [scripts/analyze_wav_lengths.py](https://github.com/iuliiakr/automate-dataprep/blob/main/scripts/analyze_wav_lengths.py)
 For TTS conversions duration of audio files in your training datasets matters.

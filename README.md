@@ -28,3 +28,30 @@ Example of usage:
 ```bash
 python scripts/match_txt_wav.py {PATH_TO_INPUT_DIR}
 ```
+
+## Basic transcription cleaning
+If your dataset was automatically transcribed, you might want to do preliminary cleaning before manual validation - capitalize first letter, add "." at the end, if needed, etc.
+```bash
+pip install tqdm colorama
+```
+Examples:
+```bash
+python process_transcripts.py [INPUT_FOLDER] [OUTPUT_OPTION] [OPTIONAL_FLAGS]
+```
+
+- Basic usage:
+```bash
+python process_transcripts.py raw_texts/ -o cleaned_texts/
+```
+- With logging:
+```bash
+python process_transcripts.py raw_texts/ -o cleaned_texts/ -l changes.log
+```
+- Overwriting Original Files
+```bash
+python process_transcripts.py raw_texts/ --overwrite
+```
+- Disabling the Audio Check
+```bash
+python process_transcripts.py raw_texts/ -o cleaned_texts/ --no-audio-check
+```

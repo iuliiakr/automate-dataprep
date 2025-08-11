@@ -1,10 +1,10 @@
 # automate-dataprep
 Useful Python scripts to automate data processing for TTS and STS ML projects.
 
-- [Get total duration of audio]()
-- [Check duration distribution]()
-- [Check for TXT and WAV matching files]()
-- [Basic transcription cleaning]()
+- [Get total duration of audio](#get-total-duration-of-audio-in-an-input-directory-uses-ffprobe)
+- [Check duration distribution](#check-duration-distribution-for-your-dataset)
+- [Check for TXT and WAV matching files](#check-if-all-txt-files-have-matching-wav-files)
+- [Basic transcription cleaning](#basic-transcription-cleaning)
 
 ## Get total duration of audio in an input directory. Uses ffprobe.
 [scripts/get_duration.py](https://github.com/iuliiakr/automate-dataprep/blob/main/scripts/get_duration.py)

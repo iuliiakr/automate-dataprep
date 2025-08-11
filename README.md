@@ -6,6 +6,8 @@ Useful Python scripts to automate data processing for TTS and STS ML projects.
 - [Check for TXT and WAV matching files](#check-if-all-txt-files-have-matching-wav-files)
 - [Basic transcription cleaning](#basic-transcription-cleaning)
 
+
+ 
 ## Get total duration of audio in an input directory. Uses ffprobe.
 [scripts/get_duration.py](https://github.com/iuliiakr/automate-dataprep/blob/main/scripts/get_duration.py)
 Outputs total duration (hh:mm:ss) of all audio (mp3, opus, wav, flac, ogg, m4a, aac) in an input directory.
@@ -14,6 +16,7 @@ Example of usage:
 python scripts/get_duration.py {PATH_TO_INPUT_DIR}
 ```
 
+ 
 
 ## Check duration distribution for your dataset
 [scripts/analyze_wav_lengths.py](https://github.com/iuliiakr/automate-dataprep/blob/main/scripts/analyze_wav_lengths.py)
@@ -24,6 +27,7 @@ Example of usage:
 python scripts/analyze_wav_lengths.py {PATH_TO_INPUT_DIR}
 ```
 
+ 
 
 ## Check if all TXT files have matching WAV files
 [scripts/match_txt_wav.py](https://github.com/iuliiakr/automate-dataprep/blob/main/scripts/match_txt_wav.py)
@@ -35,6 +39,7 @@ Example of usage:
 python scripts/match_txt_wav.py {PATH_TO_INPUT_DIR}
 ```
 
+ 
 
 ## Basic transcription cleaning
 If your dataset was automatically transcribed, you might want to do preliminary cleaning before manual validation - capitalize first letter, add "." at the end, if needed, etc.
